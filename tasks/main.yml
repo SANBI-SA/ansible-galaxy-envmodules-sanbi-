@@ -1,0 +1,10 @@
+---
+- name: copy dependency_resolvers_conf.xml
+  become: yes
+  become_user: "{{ galaxy_user_name }}"
+  copy: src=dependency_resolvers_conf.xml dest={{ galaxy_config_dir }}
+
+- name: Install libtcl8.5 for Environment Modules
+  become: yes
+  become_user: root
+  apt: name=libtcl8.5 state=present
