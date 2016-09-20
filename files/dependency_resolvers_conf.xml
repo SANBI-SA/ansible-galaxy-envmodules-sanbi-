@@ -1,8 +1,6 @@
 <dependency_resolvers>
-  <modules modulecmd="/cip0/software/x86_64/modules/Modules/3.2.9/bin/modulecmd" 
-           modulepath="/cip0/software/modules/versions:/cip0/software/x86_64/modules/Modules/$MODULE_VERSION/modulefiles:/cip0/software/modules/modulefiles" />
-  <modules modulecmd="/cip0/software/x86_64/modules/Modules/3.2.9/bin/modulecmd" versionless="true" find_by="directory"
-           modulepath="/cip0/software/modules/versions:/cip0/software/x86_64/modules/Modules/$MODULE_VERSION/modulefiles:/cip0/software/modules/modulefiles" />
+  <!--<modules modulecmd="/cip0/software/x86_64/modules/Modules/3.2.9/bin/modulecmd" 
+           modulepath="/cip0/software/modules/versions:/cip0/software/x86_64/modules/Modules/$MODULE_VERSION/modulefiles:/cip0/software/modules/modulefiles" /> -->
   <tool_shed_packages />
   <galaxy_packages />
   <galaxy_packages versionless="true" />
