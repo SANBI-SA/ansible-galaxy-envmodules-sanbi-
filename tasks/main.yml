@@ -9,13 +9,15 @@
   become_user: root
   apt: name=libtcl8.5 state=present
 
-- name: Create the syslink for the job_conf.xml
-  become: yes
-  become_user: "{{ galaxy_user_name }}"
-  file: >
-    src=/cip0/software/galaxy/shared_config/job_conf.xml
-    dest={{ galaxy_config_dir }}/job_conf.xml
-    state=link
+#->seems like the job_conf.xml gets copies by the ansible-galaxy-sge-sanbi to the config file  
+
+#- name: Create the syslink for the job_conf.xml
+#  become: yes
+#  become_user: "{{ galaxy_user_name }}"
+#  file: >
+#    src=/cip0/software/galaxy/shared_config/job_conf.xml
+#    dest={{ galaxy_config_dir }}/job_conf.xml
+#    state=link
 
 - name: Create the syslink for the tool_destinations.yml
   become: yes
